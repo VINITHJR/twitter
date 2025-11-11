@@ -19,10 +19,10 @@ except Exception:
 WEATHER_API_KEY = st.secrets.get("WEATHER_API_KEY", "f4ed27622e29484a8c342846251210")
 GROQ_API_KEY = st.secrets.get("GROQ_API_KEY", "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")
 
-TWITTER_API_KEY = st.secrets.get("TWITTER_API_KEY", "cMJIivsDEpvv8sbvvm5jSUAIZ")
-TWITTER_API_KEY_SECRET = st.secrets.get("TWITTER_API_KEY_SECRET", "N3brDG386I7xyYJSLptwmm4bYBFJcZcNEvZJ5XHXmkOC6iyllq")
-TWITTER_ACCESS_TOKEN = st.secrets.get("TWITTER_ACCESS_TOKEN", "1845850146107703297-8YkAu3JZmw9JrzH0gBGSTo7sOnXikQ")
-TWITTER_ACCESS_TOKEN_SECRET = st.secrets.get("TWITTER_ACCESS_TOKEN_SECRET", "FBeUdPC5NDBZIDPaZcNDM7GZI8Dh83gXE8OKQfgINUhwx")
+TWITTER_API_KEY = st.secrets.get("TWITTER_API_KEY", "OMQqc5K4ilbWz3Us9SKvg8Yta")
+TWITTER_API_KEY_SECRET = st.secrets.get("TWITTER_API_KEY_SECRET", "eXoOOSk2eaJ0NfwZ6cNhORRFbIaKPgAavyU7KzO9OyjH5cohwa")
+TWITTER_ACCESS_TOKEN = st.secrets.get("TWITTER_ACCESS_TOKEN", "1845850146107703297-m4NSBzgPdjDC48XFqAyGznHoHJK5Zj")
+TWITTER_ACCESS_TOKEN_SECRET = st.secrets.get("TWITTER_ACCESS_TOKEN_SECRET", "k88a9zqXXvoS41k5Nus5gDbCiHK2tshWHYQ0MuE1g9z1W")
 
 # ------------------------------
 # Config / constants
@@ -254,5 +254,6 @@ if generate_btn:
                             st.error(f"Tweet failed: {e}")
                 else:
                     st.info("Provide valid Twitter API keys in secrets to enable posting.")
+
 
 
