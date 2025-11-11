@@ -17,7 +17,7 @@ except Exception:
 # Set these in Streamlit secrets
 # ------------------------------
 WEATHER_API_KEY = st.secrets.get("WEATHER_API_KEY", "f4ed27622e29484a8c342846251210")
-GROQ_API_KEY = st.secrets.get("GROQ_API_KEY", "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")
+GROQ_API_KEY = st.secrets.get("GROQ_API_KEY", "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")
 
 TWITTER_API_KEY = st.secrets.get("TWITTER_API_KEY", "cMJIivsDEpvv8sbvvm5jSUAIZ")
 TWITTER_API_KEY_SECRET = st.secrets.get("TWITTER_API_KEY_SECRET", "N3brDG386I7xyYJSLptwmm4bYBFJcZcNEvZJ5XHXmkOC6iyllq")
@@ -254,4 +254,5 @@ if generate_btn:
                             st.error(f"Tweet failed: {e}")
                 else:
                     st.info("Provide valid Twitter API keys in secrets to enable posting.")
+
 
